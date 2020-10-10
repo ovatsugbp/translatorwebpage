@@ -1,0 +1,201 @@
+/*===========================
+      00. COLOR PALETTE
+===========================*/
+/* Black - #000;
+Sade - #ACA885;
+Grullo - #918B76;
+Nickel - #626C66;
+Rifle Green - #434A42; */
+
+
+
+
+/*===========================
+    01.COMMON css 
+===========================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #646F87; }
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+img {
+    max-width: 100%; }
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none; }
+
+a {
+    color: #ACA885;
+    padding: .2rem 2rem; 
+}
+
+
+
+i,
+span,
+a {
+    display: inline-block; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #293651;
+    margin: 0px; }
+
+h1 {
+    font-size: 48px; 
+}
+
+h2 {
+  font-size: 36px; 
+}
+
+h3 {
+  font-size: 28px; 
+}
+
+h4 {
+  font-size: 22px; 
+}
+
+h5 {
+  font-size: 18px; 
+}
+
+h6 {
+  font-size: 16px; 
+
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none; }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #646F87;
+  margin: 0px; 
+}
+/*===========================
+    02.NAV BAR
+===========================*/
+
+
+.header_navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; 
+}
+
+.sticky {
+    position: fixed;
+    z-index: 99;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; 
+}
+
+.sticky .navbar {
+    padding: 10px 0; 
+}
+
+.navbar {
+    padding: 25px 0;
+    border-radius: 5px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; 
+}
+.navbar-brand {
+    padding: 0; 
+}
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #ACA885;
+    animation: borderanim 3s linear forwards;
+}
+
+@keyframes borderanim {
+    from {
+        border-bottom: 2px solid transparent;        
+    }
+    to {
+        border-bottom: 2px solid #918B76;        
+    }
+}
+.nav-item a:focus,
+.nav-item a:hover {
+    text-decoration: none;
+    color: #434A42;
+}
+
+.navbar-toggler {
+    padding: 0; 
+}
+.navbar-toggler .toggler-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #293651;
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+.navbar-toggler.active .toggler-icon:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 7px; }
+.navbar-toggler.active .toggler-icon:nth-of-type(2) {
+    opacity: 0; }
+.navbar-toggler.active .toggler-icon:nth-of-type(3) {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: -7px; 
+}
