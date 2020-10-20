@@ -52,8 +52,8 @@ h4,
 h5,
 h6 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    color: #626C66;
+    font-weight: normal;
+    color: #434A42;
     margin: 0px; }
 
 h1 {
@@ -248,4 +248,28 @@ strong {
 .reasons {
     height: 30em;
     background-image: linear-gradient(to top, #aca885, #a5a181, #9f997d, #98927a, #918b76);
+}
+.experience {
+    background-color: #fff;
+    margin: 5em;
+    height: 15em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 44px 12px rgba(0,0,0,0.15);
+    -moz-box-shadow: 10px 10px 44px 12px rgba(0,0,0,0.15);
+    box-shadow: 10px 10px 44px 12px rgba(0,0,0,0.15);
+}
+.experience img{
+    width: 7em;
+}
+
+    
+.jb img{
+width: 12em;
+}
+
+.ex-title {
+    text-align: center;
 }
