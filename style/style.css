@@ -7,42 +7,42 @@ Grullo - #918B76;
 Nickel - #626C66;
 Rifle Green - #434A42; */
 
-
-
-
 /*===========================
     01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 body {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #646F87; }
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #646f87;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 a:focus,
 input:focus,
 textarea:focus,
 button:focus {
-    text-decoration: none;
-    outline: none; }
+  text-decoration: none;
+  outline: none;
+}
 
 a {
-    color: #ACA885;
-    padding: .2rem 2rem; 
+  color: #aca885;
+  padding: 0.2rem 2rem;
 }
 i,
 span,
 a {
-    display: inline-block; 
+  display: inline-block;
 }
 
 h1,
@@ -51,225 +51,277 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    color: #434A42;
-    margin: 0px; }
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #434a42;
+  margin: 0px;
+}
 
 h1 {
-    font-size: 40px; 
+  font-size: 40px;
 }
 
 h2 {
-    font-size: 36px; 
+  font-size: 36px;
 }
 
 h3 {
-    font-size: 28px; 
+  font-size: 28px;
 }
 
 h4 {
-    font-size: 22px; 
+  font-size: 22px;
 }
 
 h5 {
-    font-size: 18px; 
+  font-size: 18px;
 }
 
 h6 {
-    font-size: 16px; 
-
+  font-size: 16px;
 }
 
-ul, ol {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none; }
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
 
 p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #918B76;
-    margin: 0px; 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #918b76;
+  margin: 0px;
 }
 
 strong {
-    font-weight: normal;
+  font-weight: normal;
 }
 /*===========================
     02.NAV BAR
 ===========================*/
 
-
 .header_navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .sticky {
-    position: fixed;
-    z-index: 99;
-    background-color: #fff;
-    -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; 
+  position: fixed;
+  z-index: 99;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .sticky .navbar {
-    padding: 10px 0; 
+  padding: 10px 0;
 }
 
 .navbar {
-    padding: 25px 0;
-    border-radius: 5px;
-    position: relative;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; 
+  padding: 25px 0;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 .navbar-brand {
-    padding: 0; 
+  padding: 0;
 }
 .navbar-brand:hover {
-    text-decoration: none;
-    color: #ACA885;
-    animation: borderanim 3s linear forwards;
+  text-decoration: none;
+  color: #aca885;
+  animation: borderanim 3s linear forwards;
 }
 .nav-item a:focus,
 .nav-item a:hover {
-    text-decoration: none;
-    color: #ACA885;
-    animation: borderanim 3s linear forwards;
+  text-decoration: none;
+  color: #aca885;
+  animation: borderanim 3s linear forwards;
 }
 
 @keyframes borderanim {
-    from {
-        border-bottom: 2px solid transparent;        
-    }
-    to {
-        border-bottom: 2px solid #918B76;        
-    }
+  from {
+    border-bottom: 2px solid transparent;
+  }
+  to {
+    border-bottom: 2px solid #918b76;
+  }
 }
-
 
 .navbar-toggler {
-    padding: 0; 
+  padding: 0;
 }
 .navbar-toggler .toggler-icon {
-    width: 30px;
-    height: 2px;
-    background-color: #293651;
-    display: block;
-    margin: 5px 0;
-    position: relative;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
+  width: 30px;
+  height: 2px;
+  background-color: #293651;
+  display: block;
+  margin: 5px 0;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
 .navbar-toggler.active .toggler-icon:nth-of-type(1) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 7px; }
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 7px;
+}
 .navbar-toggler.active .toggler-icon:nth-of-type(2) {
-    opacity: 0; }
+  opacity: 0;
+}
 .navbar-toggler.active .toggler-icon:nth-of-type(3) {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg);
-    top: -7px; 
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  top: -7px;
 }
 
 /*===========================
     02.WELCOME
 ===========================*/
 .welcome {
-    width: 100%;
-    height: 45rem;
+  width: 100%;
+  height: 45rem;
 }
 
 .introback {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    z-index: -1; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
 }
 .introback::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #434A42;
-    -webkit-transform: skewX(20deg);
-    -moz-transform: skewX(20deg);
-    -ms-transform: skewX(20deg);
-    -o-transform: skewX(20deg);
-    transform: skewX(20deg);
-    top: 0;
-    left: 0; 
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #434a42;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+  transform: skewX(20deg);
+  top: 0;
+  left: 0;
 }
 .logo-picture img {
-    width: 35rem;
+  width: 35rem;
 }
 
 .central-text {
-    width: 40%;
-    height: 10em;
-    margin: 2em auto;
-    text-align: center;
+  width: 40%;
+  height: 10em;
+  margin: 2em auto;
+  text-align: center;
 }
 .about-me img {
-    width: 35rem;
+  width: 35rem;
 }
 
 .reasons {
-    height: 30em;
-    background-image: linear-gradient(to top, #aca885, #a5a181, #9f997d, #98927a, #918b76);
+  height: 30em;
+  background-image: linear-gradient(
+    to top,
+    #aca885,
+    #a5a181,
+    #9f997d,
+    #98927a,
+    #918b76
+  );
 }
 .experience {
-    background-color: #fff;
-    margin: 5em;
-    height: 15em;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-shadow: 10px 10px 44px 12px rgba(0,0,0,0.15);
-    -moz-box-shadow: 10px 10px 44px 12px rgba(0,0,0,0.15);
-    box-shadow: 10px 10px 44px 12px rgba(0,0,0,0.15);
+  background-color: #fff;
+  margin: 5em;
+  height: 15em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 10px 10px 44px 12px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 10px 10px 44px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 10px 44px 12px rgba(0, 0, 0, 0.15);
 }
-.experience img{
-    width: 7em;
+.experience img {
+  width: 7em;
 }
 
-    
-.jb img{
-width: 12em;
+.jb img {
+  width: 12em;
 }
 
 .ex-title {
-    text-align: center;
+  text-align: center;
+}
+
+/*===========================
+    03.Clients
+===========================*/
+
+.clients {
+  height: 30em;
+  background: white;
+  text-align: center;
+}
+
+.clients > h2 {
+  margin: 2em 0;
+}
+
+.clients-area-logo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.clients-logo{
+  margin: 1em;
+  padding: 1em;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background-color: #918b76;
+  border-radius: 30px;
+}
+.clients-logo img{
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.clients-area-title{
+  display: flex;
+}
+
+.clients-area-title > p{
+  margin: 3em 3em;
 }
