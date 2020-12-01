@@ -208,8 +208,11 @@ strong {
     02.WELCOME
 ===========================*/
 .welcome {
-  width: 100%;
-  height: 45rem;
+  position: relative;
+  z-index: 5;
+  height: 45em;
+  overflow: hidden;
+  padding-top: 70px;
 }
 
 .introback {
@@ -271,10 +274,10 @@ strong {
   -moz-box-shadow: 10px 10px 44px 12px rgba(0, 0, 0, 0.15);
   box-shadow: 10px 10px 44px 12px rgba(0, 0, 0, 0.15);
 }
+
 .experience img {
   width: 7em;
 }
-
 .jb img {
   width: 12em;
 }
@@ -282,9 +285,34 @@ strong {
 .ex-title {
   text-align: center;
 }
+/*===========================
+    03.Services
+===========================*/
+.services{
+  text-align: center;
+  width: 100%;
+  height: 50em;
+}
+.services h2{
+  margin: 2em 0 1em;
+}
+.services__items_area{
+  display: flex;
+  justify-content: center;
+  
+}
+.services__item{
+  width: 200px;
+  height: 200px;
+  border: 5px solid #2936518f;
+    margin: 2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*===========================
-    03.Clients
+    04.Clients
 ===========================*/
 
 .clients {
@@ -324,4 +352,60 @@ strong {
 
 .clients-area-title > p{
   margin: 3em 3em;
+}
+
+/*===========================
+    03.Contact
+===========================*/
+
+.contact {
+  width: 100%;
+  height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #434A42;
+}
+.contact h5 {
+  color: #918B76;
+}
+
+.contact__item{
+  margin: 2em;
+}
+
+.email{
+  font-size: 2.5em;
+}
+
+
+.custom-shape-divider-top-1606862780 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1606863355 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+
+.custom-shape-divider-top-1606863355 .shape-fill {
+  fill: #434A42;
+}
+
+.contact-container{
+  padding: 0;
+  overflow: hidden;
+}
+
+.surname{
+  color: white;
 }
