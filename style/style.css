@@ -12,6 +12,10 @@ Rifle Green - #434A42; */
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Quicksand", sans-serif;
     font-weight: normal;
@@ -146,6 +150,7 @@ strong {
 }
 .navbar-brand {
     padding: 0;
+    margin-left: 2em;
 }
 .navbar-brand:hover {
     text-decoration: none;
@@ -343,6 +348,7 @@ strong {
     height: 30em;
     background: white;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .clients > h2 {
@@ -437,4 +443,89 @@ strong {
 }
 .workana {
     width: 10rem;
+}
+
+@media screen and (max-width: 1025px) {
+    .clients {
+        margin-bottom: 8rem;
+    }
+    .introback::before {
+        content: none;
+    }
+    .navbar-expand-lg {
+        background-color: #626c66;
+        padding: 25px;
+    }
+    .logo-picture img {
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .welcome p{
+        margin-top: 10px;
+    }
+    .welcome img {
+       width: 16rem;
+    }
+    .central-text{
+        width: 70%;
+        margin: 1em auto 1em;
+        height: 6em;
+    }
+    .about-me{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.7rem;
+    }
+    .about-me img {
+        width: 16rem;
+    }
+    .reasons{
+        height: 45em;
+    }
+    .experience{
+        margin: 2em;
+    }
+    .services{
+        height: 40em;
+    }
+
+    .services__items_area{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services__item{
+        width: 80px;
+        height: 80px;
+        margin: 1rem;
+        
+    }
+    .services__item span {
+        font-size: 22px;
+    }
+    
+    .services__item p {
+        font-size: 12px;
+    }
+    .clients-logo{
+        width: 100px;
+        height: 65px;
+    }
+    .clients-logo img {
+        width: 80px;
+        height: 35px;
+    }
+    .clients-area-title{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .clients-area-title > p{
+        margin: 1rem;
+        font-size: 14px;
+    }
+
+    .email{
+        font-size: 1.5rem;
+    }
+    
 }
